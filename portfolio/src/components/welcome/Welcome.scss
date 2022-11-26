@@ -1,0 +1,34 @@
+.Welcome-text {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Welcome-name-animation {
+    color: white;
+    animation-name: name-size;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes name-size {
+    0%   {color:azure; font-size: calc(10px + 2vmin);}
+    50%  {color:#628BE4; font-size: calc(10px + 5vmin);}
+    100% {color:whitesmoke; font-size: calc(10px + 2vmin);}    
+}
+
+@keyframes name-size-new {
+    from {
+        color:azure;
+        font-size: calc(10px + 2vmin);
+      }
+      to {
+        color:#628BE4;
+        font-size: calc(10px + 5vmin);
+      }
+}
