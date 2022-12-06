@@ -1,11 +1,13 @@
+@use '../../App.scss' as app;
+
 .Welcome-text {
-    background-color: #282c34;
+    background-color: app.$background-color;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: app.$app-small-font;
     color: white;
 }
 
@@ -17,18 +19,7 @@
 }
 
 @keyframes name-size {
-    0%   {color:azure; font-size: calc(10px + 2vmin);}
-    50%  {color:#628BE4; font-size: calc(10px + 5vmin);}
-    100% {color:whitesmoke; font-size: calc(10px + 2vmin);}    
-}
-
-@keyframes name-size-new {
-    from {
-        color:azure;
-        font-size: calc(10px + 2vmin);
-      }
-      to {
-        color:#628BE4;
-        font-size: calc(10px + 5vmin);
-      }
+    0%   {color:azure; font-size: app.$app-small-font;}
+    50%  {color:#628BE4; font-size: app.$app-mid-font;}
+    100% {color:whitesmoke; font-size: app.$app-large-font;}
 }
