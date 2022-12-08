@@ -1,0 +1,62 @@
+@use '../../App.scss' as app;
+
+p {
+    line-height: 1.0em;
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.intro-big {
+    display: block;
+}
+
+.intro-small {
+    display: none;
+}
+
+.gigantic-font {
+    font-size: 120px;
+    font-weight: bold;
+    margin: 0.1em;
+}
+
+.intro-font {
+    font-size: app.$app-mid-font;
+}
+
+.name-font {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.intro-second {
+    font-size: app.$app-small-font;
+}
+
+.brief-description {
+    display: block;
+    padding-left: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .gigantic-font {
+        font-size: 50px;
+        font-weight: bold;
+        margin: 0.1em;
+    }
+    .intro-big {
+        display: none;
+    }
+    .intro-small {
+        display: block;
+        min-height: 135px;
+    }
+}

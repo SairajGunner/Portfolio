@@ -4,15 +4,15 @@ function Header() {
     return (
         <div>
             <div className="flex-container">
-                <div className="logo">
+                <div className="logo menu-btn">
                     <img width={"120px"} src="/images/Sairaj - Resize.png"></img>
                 </div>
                 <div className="flex-container-buttons">
-                    <div>Home</div>
-                    <div>Skills</div>
-                    <div>Experience</div>
-                    <div>Education</div>
-                    <div>Contact</div>
+                    <div className="menu-btn">Home</div>
+                    <div className="menu-btn">Skills</div>
+                    <div className="menu-btn">Experience</div>
+                    <div className="menu-btn">Education</div>
+                    <div className="menu-btn">Contact</div>
                 </div>
             </div>
         </div>

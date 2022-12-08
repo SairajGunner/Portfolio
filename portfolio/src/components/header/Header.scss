@@ -26,5 +26,16 @@
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    // font-weight: bold;
+}
+
+.menu-btn {
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    text-shadow: 1px 1px 10px white;
+}
+
+.menu-btn:focus {
+    text-shadow: 1px 1px 10px white;
 }
