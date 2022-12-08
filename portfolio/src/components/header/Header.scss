@@ -1,0 +1,30 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.flex-container > div:last-child {
+    margin-left: auto;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.flex-container-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container-buttons > div {
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    // font-weight: bold;
+}
