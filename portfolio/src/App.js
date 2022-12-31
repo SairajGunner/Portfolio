@@ -1,6 +1,7 @@
 import './App.scss';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
+import Skills from './components/skills/Skills';
 import Welcome from './components/welcome/Welcome';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
         <Header></Header>
       </div>
       {/* <Welcome></Welcome> */}
-      <Home></Home>
+      {/* <Home></Home> */}
+      <Skills></Skills>
     </div>
   );
 }

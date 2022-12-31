@@ -3,7 +3,7 @@ import './Home.scss';
 
 function Home() {
     function ChangeColor(e) {
-        const colors = ['red', 'magenta', 'pink', 'yellow', 'cyan'];
+        const colors = ['orange', 'magenta', 'pink', 'yellow', 'cyan', 'white'];
         e.target.style.color = colors[Math.floor(Math.random() * 5)];
     }
 
@@ -15,13 +15,13 @@ function Home() {
         <div className="container">
             <div className="intro-big">
                 <p className="gigantic-font">
-                    <span onMouseOver={ChangeColor} >FULL</span>
+                    <span onMouseOver={ChangeColor}>FULL</span>
                     <br></br>
-                    <span onMouseOver={ChangeColor} >STACK</span>
+                    <span onMouseOver={ChangeColor}>STACK</span>
                     <br></br>
-                    <span onMouseOver={ChangeColor} >WEB</span>
+                    <span onMouseOver={ChangeColor}>WEB</span>
                     <br></br>
-                    <span onMouseOver={ChangeColor} >DEVELOPER</span>
+                    <span onMouseOver={ChangeColor}>DEVELOPER</span>
                 </p>
             </div>
             <div className="intro-small">

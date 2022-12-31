@@ -1,0 +1,11 @@
+.card {
+    border: 1px solid white;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.card-title-div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
