@@ -18,7 +18,7 @@ export default class SkillCluster extends Component {
             <div id="skills-flex-container" className="container">
                 {
                     this.props.skills.map((skill) => {
-                        return (<SkillNode changeOrientation={this.ChangeOrientation} skill={skill}></SkillNode>)
+                        return (<SkillNode key={skill.name} changeOrientation={this.ChangeOrientation} skill={skill}></SkillNode>)
                     })
                 }
             </div>
