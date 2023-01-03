@@ -7,10 +7,6 @@ function Home() {
         e.target.style.color = colors[Math.floor(Math.random() * 5)];
     }
 
-    function RestoreColor(e) {
-        e.target.style.color = 'white';
-    }
-
     return (
         <div className="container">
             <div className="intro-big">
