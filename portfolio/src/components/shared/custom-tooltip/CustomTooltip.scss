@@ -1,0 +1,29 @@
+@use '../../../App.scss' as app;
+
+.custom-tooltip {
+    z-index: 2;
+    max-width: 400px;
+    min-width: 200px;
+    max-height: fit-content;
+    border: 1px solid white;
+    border-radius: 5%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-size: small;
+    color: whitesmoke;
+    background-color: app.$background-color;
+}
+
+.custom-tooltip-title {
+    margin: 5px;
+    font-size: medium;
+    font-family: serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.custom-tooltip-description {
+    font-family: serif;
+    font-weight: lighter;
+}

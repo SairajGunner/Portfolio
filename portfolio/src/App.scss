@@ -1,0 +1,31 @@
+/* Global Fonts */
+$app-small-font: calc(10px + 2vmin);
+$app-mid-font: calc(10px + 3.5vmin);
+$app-large-font: calc(10px + 5vmin);
+
+.App-small-font {
+  font-size: $app-small-font;
+}
+
+.App-mid-font {
+  font-size: $app-mid-font;
+}
+
+.App-large-font {
+  font-size: $app-large-font;
+}
+
+/* Global Colors */
+$background-color: #282c34;
+$font-color: white;
+
+
+.App-header {
+  min-height: 10vh;
+}
+
+.App {
+  background-color: $background-color;
+  color: $font-color;
+  min-height: 100vh;
+}

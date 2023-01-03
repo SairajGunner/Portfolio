@@ -1,0 +1,25 @@
+@use '../../App.scss' as app;
+
+.Welcome-text {
+    background-color: app.$background-color;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: app.$app-small-font;
+    color: white;
+}
+
+.Welcome-name-animation {
+    color: white;
+    animation-name: name-size;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes name-size {
+    0%   {color:azure; font-size: app.$app-small-font;}
+    50%  {color:#628BE4; font-size: app.$app-mid-font;}
+    100% {color:whitesmoke; font-size: app.$app-large-font;}
+}

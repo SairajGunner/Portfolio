@@ -1,0 +1,20 @@
+.expander-float-x {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-before;
+}
+
+.expander-float-x > div {
+    margin: 10px;
+}
+
+.expander-float-y {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-before;
+}
+
+.expander-float-y > div {
+    margin: 10px;
+}

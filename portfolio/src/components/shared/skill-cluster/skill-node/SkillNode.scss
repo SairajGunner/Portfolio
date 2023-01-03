@@ -1,0 +1,23 @@
+@use '../../../../App.scss' as app;
+
+.skill-node {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: yellow;
+    color: app.$background-color;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sub-skill-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
