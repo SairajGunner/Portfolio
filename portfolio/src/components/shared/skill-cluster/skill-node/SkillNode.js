@@ -1,5 +1,7 @@
 import { Component } from 'react';
 import './SkillNode.scss';
+import FadeIn from 'react-fade-in/lib/FadeIn';
+import SubSkillNode from './sub-skill-node/SubSkillNode';
 
 export default class SkillNode extends Component {
     constructor(props) {
@@ -22,15 +24,18 @@ export default class SkillNode extends Component {
                 <div onClick={this.toggleTray} className='skill-node'>
                     <p>{this.props.skill.name}</p>
                 </div>
-                {this.state.showTray && <div className='sub-skill-list'>
-                    {
-                        this.props.skill.subSkills.map((subSkill) => {
-                            return (<div key={subSkill} className='sub-skill-item'>
-                                <p>{subSkill}</p>
-                            </div>)
-                        })
-                    }
-                </div>}
+                {this.state.showTray &&
+                    <div className='sub-skill-list'>
+                        {
+                            this.props.skill.subSkills.map((subSkill) => {
+                                return (
+                                    <FadeIn delay={100} transitionDuration={1000} >
+                                        <SubSkillNode name={subSkill.name} description={subSkill.description}></SubSkillNode>
+                                    </FadeIn>
+                                );
+                            })
+                        }
+                    </div>}
             </div>
         );
     }

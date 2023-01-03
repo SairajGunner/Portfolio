@@ -6,16 +6,61 @@ export default class Skills extends Component {
     skills = [
         {
             name: 'Web Development',
-            subSkills: ['Azure', '.NET', 'Angular', 'React', 'SQL Server']
+            subSkills: [{
+                name: 'Azure',
+                description: ''
+            }, {
+                name: '.NET',
+                description: ''
+            }, { 
+                name: 'Angular',
+                description: '' 
+            }, { 
+                name: 'React', 
+                description: '' 
+            }, { 
+                name: 'SQL Server', 
+                description: '' 
+            }]
         }, {
             name: 'Data Analysis',
-            subSkills: ['HDFS', 'Hive', 'Spark', 'Spark Streaming', 'Flume', 'Kafka']
+            subSkills: [{
+                name: 'HDFS',
+                description: ''
+            }, {
+                name: 'Hive',
+                description: ''
+            }, { 
+                name: 'Spark',
+                description: '' 
+            }, { 
+                name: 'Spark Streaming', 
+                description: '' 
+            }, { 
+                name: 'Flume', 
+                description: '' 
+            }, { 
+                name: 'Kafka', 
+                description: '' 
+            }]
         }, {
             name: '3D & Game Development',
-            subSkills: ['three.js', 'Unity']
+            subSkills: [{ 
+                name: 'three.js', 
+                description: '' 
+            }, { 
+                name: 'Unity', 
+                description: '' 
+            }]
         }, {
             name: 'Research',
-            subSkills: ['Technology', 'Human Psychology']
+            subSkills: [{ 
+                name: 'three.js', 
+                description: '' 
+            }, { 
+                name: 'Unity', 
+                description: '' 
+            }]
         }
     ];
 
