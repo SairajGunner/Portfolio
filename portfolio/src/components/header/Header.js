@@ -12,10 +12,13 @@ function Header() {
                     <div className="menu-btn">
                         <Link to={"/"}>Home</Link>
                     </div>
+                    <div className="menu-btn">Experience</div>
+                    <div className="menu-btn">
+                        <Link to={"/licenses"}>Licenses</Link>
+                    </div>
                     <div className="menu-btn">
                         <Link to={"/skills"}>Skills</Link>
                     </div>
-                    <div className="menu-btn">Experience</div>
                     <div className="menu-btn">Education</div>
                     <div className="menu-btn">Contact</div>
                 </div>
