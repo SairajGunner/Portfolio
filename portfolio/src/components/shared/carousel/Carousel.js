@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import './Carousel.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faCircleDot, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faCircleDot, faArrowRight, faCircle } from '@fortawesome/free-solid-svg-icons';
 
 export default class Carousel extends Component {
     constructor(props) {
@@ -10,6 +10,7 @@ export default class Carousel extends Component {
             currentImageIndex: 0
         };
         this.changeImage = this.changeImage.bind(this);
+        this.seekImage = this.seekImage.bind(this);
     }
 
     changeImage(direction) {
@@ -37,27 +38,35 @@ export default class Carousel extends Component {
         }
     }
 
+    seekImage(index) {
+        this.setState({
+            currentImageIndex: index
+        });
+    }
+
     render() {
         return (
             <div className="carousel-container">
                 <div onClick={() => { this.changeImage('L') }} className="left-arrow">
-                    <FontAwesomeIcon icon={faArrowLeft} />
+                    <FontAwesomeIcon className="fa-2x" icon={faArrowLeft} />
                 </div>
                 <div className="image-renderer-container">
                     <div className="image-renderer">
-                        <img src={this.props.images[this.state.currentImageIndex].src} alt={this.props.images[this.state.currentImageIndex].alt}></img>
-                        {/* <img src="/images/C-Sharp Developer.PNG" alt={this.props.images[this.state.currentImageIndex].alt}></img> */}
+                        <img className="image-content" src={this.props.images[this.state.currentImageIndex].src} alt={this.props.images[this.state.currentImageIndex].alt}></img>
                     </div>
-                    <div className="image-renderer-indicators">
+                    <div>
                         {
-                            this.props.images.map(() => {
-                                return <FontAwesomeIcon icon={faCircleDot} />
+                            this.props.images.map((element, index) => {
+                                if (index === this.state.currentImageIndex)
+                                    return <FontAwesomeIcon className="renderer-indicator" icon={faCircleDot} />
+                                else
+                                    return <FontAwesomeIcon onClick={() => {this.seekImage(index)}} className="renderer-indicator" icon={faCircle} />
                             })
                         }
                     </div>
                 </div>
                 <div onClick={() => { this.changeImage('R') }} className="right-arrow">
-                    <FontAwesomeIcon icon={faArrowRight} />
+                    <FontAwesomeIcon className="fa-2x" icon={faArrowRight} />
                 </div>
             </div>
         )

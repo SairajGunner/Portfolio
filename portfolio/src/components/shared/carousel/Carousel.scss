@@ -18,14 +18,37 @@
     justify-content: space-between;
     justify-items: center;
     align-items: center;
+    user-select: none;
 }
 
 .image-renderer {
-    width: 90%;
-    height: 90%;
+    max-width: 956px;
+    max-height: 537px;
+    background-color: black;
 }
 
-.image-renderer-indicators {
-    height: 10%;
+.image-content {
+    z-index: 2;
+    max-width: 956px;
+    max-height: 537px;
 }
 
+.renderer-indicator {
+    margin: 10px 5px 10px 5px;
+    cursor: pointer;
+}
+
+.left-arrow, .right-arrow {
+    background-color: cadetblue;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-arrow :hover {
+    background-color: app.$background-color;
+}
+
+.right-arrow :hover {
+    background-color: app.$background-color;
+}
