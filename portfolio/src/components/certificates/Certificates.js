@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Card from '../shared/card/Card';
 import Carousel from '../shared/carousel/Carousel';
 import './Certificates.scss';
 
@@ -46,6 +47,28 @@ export default class Certificates extends Component {
         }
     ];
 
+    badges = [{
+        src: '/images/Azure Architect Badge.png',
+        alt: 'Azure Architect Badge',
+        validity: 'May 2023'
+    }, {
+        src: '/images/Azure Admin Badge.png',
+        alt: 'Azure Administrator Badge',
+        validity: 'May 2023'
+    }, {
+        src: '/images/Azure Network Engineer Badge.png',
+        alt: 'Azure Network Engineer Badge',
+        validity: 'March 2023'
+    }, {
+        src: '/images/Azure Fundamentals Badge.png',
+        alt: 'Azure Fundamentals Badge',
+        validity: 'No Expiry'
+    }, {
+        src: '/images/C-Sharp Badge.png',
+        alt: 'C# Developer Badge',
+        validity: 'No Expiry'
+    }];
+
     constructor(props) {
         super(props);
         this.state = {};
@@ -53,8 +76,17 @@ export default class Certificates extends Component {
 
     render() {
         return (
-            <div className="container">
-                <Carousel images={this.images}></Carousel>
+            <div>
+                <div className="container">
+                    {
+                        this.badges.map((badge) => {
+                            return (<Card badge={badge}></Card>)
+                        })
+                    }
+                </div>
+                <div className="container">
+                    <Carousel images={this.images}></Carousel>
+                </div>
             </div>
         );
     }
