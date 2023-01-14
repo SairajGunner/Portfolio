@@ -1,0 +1,68 @@
+@use '../../../App.scss' as app;
+
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: space-between;
+}
+
+.carousel-phone-renderer {
+    display: none;
+}
+
+.image-renderer-container {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    user-select: none;
+}
+
+.image-renderer {
+    max-width: 956px;
+    max-height: 537px;
+    background-color: black;
+}
+
+.image-content {
+    z-index: 2;
+    max-width: 956px;
+    max-height: 537px;
+}
+
+.renderer-indicator {
+    margin: 10px 5px 10px 5px;
+    cursor: pointer;
+}
+
+.left-arrow, .right-arrow {
+    background-color: cadetblue;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-arrow :hover {
+    background-color: app.$background-color;
+}
+
+.right-arrow :hover {
+    background-color: app.$background-color;
+}
+
+@media only screen and (max-width: 960px) {
+    .carousel-container {
+        display: none;
+    }
+
+    .carousel-phone-renderer {
+        display: block;
+    }
+}

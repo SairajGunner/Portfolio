@@ -3,6 +3,8 @@ import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Skills from './components/skills/Skills';
 import Welcome from './components/welcome/Welcome';
+import { Routes, Route } from "react-router-dom";
+import Certificates from './components/certificates/Certificates';
 
 function App() {
   return (
@@ -10,9 +12,14 @@ function App() {
       <div className="App-header">
         <Header></Header>
       </div>
-      <Welcome></Welcome>
-      {/* <Home></Home> */}
-      {/* <Skills></Skills> */}
+      <main>
+        <Routes>
+          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/" element={<Home />} exact />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/licenses" element={<Certificates />} />
+        </Routes>
+      </main>
     </div>
   );
 }

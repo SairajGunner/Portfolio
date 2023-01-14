@@ -1,0 +1,31 @@
+@use '../../../App.scss' as app;
+
+.card {
+    border: 1px solid yellow;
+    background-color: white;
+    border-radius: 5%;
+    margin: 20px 0px 20px 0px; 
+}
+
+.card-image-display {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.card-details {
+    text-align: center;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.card-details a {
+    color: orange;
+}
+
+.card-details a :hover {
+    color: red;
+}
+
+.card-details p {
+    color: app.$background-color;
+}
