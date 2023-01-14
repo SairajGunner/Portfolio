@@ -7,43 +7,56 @@ export default class Certificates extends Component {
     images = [
         {
             src: '/images/Azure Architect.jpg',
-            alt: 'Azure Architect'
+            alt: 'Azure Architect',
+            title: 'Microsoft - Azure Architect'
         }, {
             src: '/images/Azure Admin.jpg',
-            alt: 'Azure Administrator'
+            alt: 'Azure Administrator',
+            title: 'Microsoft - Azure Administrator'
         }, {
             src: '/images/Azure Network Engineer.jpg',
-            alt: 'Azure Network Engineer'
+            alt: 'Azure Network Engineer',
+            title: 'Microsoft - Azure Network Engineer'
         }, {
             src: '/images/Azure Fundamentals.jpg',
-            alt: 'Azure Fundamentals'
+            alt: 'Azure Fundamentals',
+            title: 'Microsoft - Azure Fundamentals'
         }, {
             src: '/images/C-Sharp Developer.jpg',
-            alt: 'C# Developer'
+            alt: 'C# Developer',
+            title: 'Microsoft - C# Developer'
         }, {
             src: '/images/The Bits & Bytes of Computer Networking.jpg',
-            alt: 'Computer Networks'
+            alt: 'Computer Networks',
+            title: 'Google - The Bits & Bytes of Computer Networking'
         }, {
             src: '/images/HTML, CSS, and Javascript for Web Developers.jpg',
-            alt: 'Web Development'
+            alt: 'Web Development',
+            title: 'Johns Hopkins University - HTML, CSS, and Javascript for Web Developers'
         }, {
             src: '/images/Decision Making Certificate.jpg',
-            alt: 'Decision Making'
+            alt: 'Decision Making',
+            title: 'Harvard ManageMentor - Decision Making'
         }, {
             src: '/images/Presentation Skills Certificate.jpg',
-            alt: 'Presentation Skills'
+            alt: 'Presentation Skills',
+            title: 'Harvard ManageMentor - Presentation Skills'
         }, {
             src: '/images/Team Creation Certificate.jpg',
-            alt: 'Team Creation'
+            alt: 'Team Creation',
+            title: 'Harvard ManageMentor - Team Creation'
         }, {
             src: '/images/Design Thinking for Innovation.jpg',
-            alt: 'Design Thinking'
+            alt: 'Design Thinking',
+            title: 'University of Virginia - Design Thinking for Innovation'
         }, {
             src: '/images/Game Design.jpg',
-            alt: 'Game Design'
+            alt: 'Game Design',
+            title: 'California Institute of Arts - Game Design'
         }, {
             src: '/images/Getting Started with Gimp.jpg',
-            alt: 'Gimp'
+            alt: 'Gimp',
+            title: 'Coursera Project Network - Gimp'
         }
     ];
 
@@ -58,7 +71,7 @@ export default class Certificates extends Component {
     }, {
         src: '/images/Azure Network Engineer Badge.png',
         alt: 'Azure Network Engineer Badge',
-        validity: 'March 2023'
+        validity: 'March 2024'
     }, {
         src: '/images/Azure Fundamentals Badge.png',
         alt: 'Azure Fundamentals Badge',
@@ -76,7 +89,10 @@ export default class Certificates extends Component {
 
     render() {
         return (
-            <div>
+            <div className="middle">
+                <div className="middle">
+                    <h1>Licenses</h1>
+                </div>
                 <div className="container">
                     {
                         this.badges.map((badge) => {
@@ -84,8 +100,13 @@ export default class Certificates extends Component {
                         })
                     }
                 </div>
-                <div className="container">
-                    <Carousel images={this.images}></Carousel>
+                <div style={{marginTop: "50px"}}>
+                    <div className="middle">
+                        <h1>Certificates</h1>
+                    </div>
+                    <div className="container">
+                        <Carousel images={this.images}></Carousel>
+                    </div>
                 </div>
             </div>
         );

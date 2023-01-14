@@ -15,7 +15,7 @@ export default class Card extends Component {
             </div>
             <div className="card-details">
                 <p>Valid Until: {this.props.badge.validity}</p>
-                <p>View the Credential <a href="https://learn.microsoft.com/en-us/users/sairajudayshankar-9802/transcript/v0y24f04qyjny18" target="blank">HERE</a></p>
+                <p>View the Credential <a className="hyper-link" href="https://learn.microsoft.com/en-us/users/sairajudayshankar-9802/transcript/v0y24f04qyjny18" target="blank">HERE</a></p>
             </div>
         </div>
         );

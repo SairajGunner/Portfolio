@@ -21,7 +21,7 @@ function Home() {
                 </p>
             </div>
             <div className="intro-small">
-                <p onMouseOver={ChangeColor} className="gigantic-font">FULL STACK WEB DEVELOPER</p>
+                <p onClick={ChangeColor} className="gigantic-font">FULL STACK WEB DEVELOPER</p>
             </div>
             <div className="brief-description">
                 <section>
@@ -29,7 +29,7 @@ function Home() {
                     <br></br>
                     <p className="intro-second">Below are some key facts about me. I am</p>
                     <ul className="intro-second">
-                        <li>a seasoned <b><i>web developer</i></b> with profund experience</li>
+                        <li>a seasoned <b><i>web developer</i></b> with profound experience</li>
                         <li>a <b><i>cloud-specialist</i></b> with multiple certificates in Azure</li>
                         <li>an up-and-coming <b><i>data analyst</i></b></li>
                         <li> a human being :)</li>

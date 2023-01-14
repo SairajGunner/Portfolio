@@ -46,27 +46,38 @@ export default class Carousel extends Component {
 
     render() {
         return (
-            <div className="carousel-container">
-                <div onClick={() => { this.changeImage('L') }} className="left-arrow">
-                    <FontAwesomeIcon className="fa-2x" icon={faArrowLeft} />
-                </div>
-                <div className="image-renderer-container">
-                    <div className="image-renderer">
-                        <img className="image-content" src={this.props.images[this.state.currentImageIndex].src} alt={this.props.images[this.state.currentImageIndex].alt}></img>
+            <div>
+                <div className="carousel-container">
+                    <div onClick={() => { this.changeImage('L') }} className="left-arrow">
+                        <FontAwesomeIcon className="fa-2x" icon={faArrowLeft} />
                     </div>
-                    <div>
+                    <div className="image-renderer-container">
+                        <div className="image-renderer">
+                            <img className="image-content" src={this.props.images[this.state.currentImageIndex].src} alt={this.props.images[this.state.currentImageIndex].alt}></img>
+                        </div>
+                        <div>
+                            {
+                                this.props.images.map((element, index) => {
+                                    if (index === this.state.currentImageIndex)
+                                        return <FontAwesomeIcon className="renderer-indicator" icon={faCircleDot} />
+                                    else
+                                        return <FontAwesomeIcon onClick={() => { this.seekImage(index) }} className="renderer-indicator" icon={faCircle} />
+                                })
+                            }
+                        </div>
+                    </div>
+                    <div onClick={() => { this.changeImage('R') }} className="right-arrow">
+                        <FontAwesomeIcon className="fa-2x" icon={faArrowRight} />
+                    </div>
+                </div>
+                <div className="carousel-phone-renderer">
+                    <ul>
                         {
-                            this.props.images.map((element, index) => {
-                                if (index === this.state.currentImageIndex)
-                                    return <FontAwesomeIcon className="renderer-indicator" icon={faCircleDot} />
-                                else
-                                    return <FontAwesomeIcon onClick={() => {this.seekImage(index)}} className="renderer-indicator" icon={faCircle} />
+                            this.props.images.map((image) => {
+                                return (<li>{image.title}</li>)
                             })
                         }
-                    </div>
-                </div>
-                <div onClick={() => { this.changeImage('R') }} className="right-arrow">
-                    <FontAwesomeIcon className="fa-2x" icon={faArrowRight} />
+                    </ul>
                 </div>
             </div>
         )
