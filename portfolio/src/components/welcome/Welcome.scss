@@ -18,6 +18,10 @@
     animation-iteration-count: infinite;
 }
 
+.large-font {
+    font-size: 30px;
+}
+
 @keyframes name-size {
     0%   {color:azure; font-size: app.$app-small-font;}
     50%  {color:#628BE4; font-size: app.$app-mid-font;}

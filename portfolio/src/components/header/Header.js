@@ -6,7 +6,7 @@ function Header() {
         <div>
             <div className="flex-container">
                 <div className="logo menu-btn">
-                    <img width={"120px"} src="/images/Sairaj - Resize.png" alt="Sairaj - Logo"></img>
+                    <Link to={"/welcome"}><img width={"120px"} src="/images/Sairaj - Resize.png" alt="Sairaj - Logo"></img></Link>
                 </div>
                 <div className="flex-container-buttons">
                     <div className="menu-btn">
@@ -20,7 +20,9 @@ function Header() {
                         <Link to={"/skills"}>Skills</Link>
                     </div>
                     <div className="menu-btn">Education</div>
-                    <div className="menu-btn">Contact</div>
+                    <div className="menu-btn">
+                        <Link to={"/contact"}>Contact</Link>
+                    </div>
                 </div>
             </div>
         </div>
