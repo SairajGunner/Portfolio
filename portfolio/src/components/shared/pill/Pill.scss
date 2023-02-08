@@ -1,0 +1,12 @@
+@use '../../../App.scss' as app;
+
+.pill {
+    margin: 10px 10px 0 0;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    color: app.$background-color;
+    font-size: 15px;
+    font-weight: bold;
+}

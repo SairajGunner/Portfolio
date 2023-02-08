@@ -19,7 +19,9 @@ function Header() {
                     <div className="menu-btn">
                         <Link to={"/skills"}>Skills</Link>
                     </div>
-                    <div className="menu-btn">Education</div>
+                    <div className="menu-btn">
+                        <Link to={"/education"}>Education</Link>
+                    </div>
                     <div className="menu-btn">
                         <Link to={"/contact"}>Contact</Link>
                     </div>
