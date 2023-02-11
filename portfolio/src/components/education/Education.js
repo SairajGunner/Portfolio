@@ -15,11 +15,13 @@ export default class Education extends Component {
                 name: 'Data Analysis Tools',
                 skills: ['Hadoop', 'Spark', 'Scala']
             }],
-            grade: '4.64 CGPA on a scale of 5'
+            grade: '4.64 CGPA on a scale of 5',
+            logo: '/images/DCLogo.jpg',
+            altText: 'Durham College'
         },
         {
             name: 'Electronics & Telecommunication Engineering',
-            type: 'Bachelor in Engineering',
+            type: 'Bachelor of Engineering',
             institution: 'Mumbai University',
             location: 'Navi Mumbai, MH, India',
             duration: 'May 2013 - May 2017',
@@ -37,7 +39,9 @@ export default class Education extends Component {
                 name: 'Object Oriented Programming',
                 skills: ['Java', 'Algorithms', 'Programming']
             }],
-            grade: '7.19 CGPA on a scale of 10'
+            grade: '7.19 CGPA on a scale of 10',
+            logo: '/images/MUImage.jpg',
+            altText: 'Mumbai University'
         }
     ]
 
