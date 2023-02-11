@@ -24,7 +24,8 @@ export default class SkillNode extends Component {
                 <div onClick={this.toggleTray} className='skill-node'>
                     <p>{this.props.skill.name}</p>
                 </div>
-                {this.state.showTray &&
+                {
+                    this.state.showTray &&
                     <div className='sub-skill-list'>
                         {
                             this.props.skill.subSkills.map((subSkill) => {
@@ -35,7 +36,8 @@ export default class SkillNode extends Component {
                                 );
                             })
                         }
-                    </div>}
+                    </div>
+                }
             </div>
         );
     }

@@ -21,7 +21,7 @@ export default class Education extends Component {
         },
         {
             name: 'Electronics & Telecommunication Engineering',
-            type: 'Bachelor in Engineering',
+            type: 'Bachelor of Engineering',
             institution: 'Mumbai University',
             location: 'Navi Mumbai, MH, India',
             duration: 'May 2013 - May 2017',
