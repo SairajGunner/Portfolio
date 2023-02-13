@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 import DetailHolder from '../shared/detail-holder/DetailHolder';
 import './Experience.scss';
 
@@ -120,6 +121,37 @@ export default class Experience extends Component {
                     'Incorporated networking for multiplayer gaming in virtual reality'
                 ]
             }]
+        }, {
+            type: 'Study',
+            experiences: [{
+                name: 'Data Analytics Student',
+                institution: 'Durham College',
+                location: 'Oshawa, ON, Canada',
+                duration: 'September 2022 - December 2022',
+                load: 'Casual',
+                favorites: [{
+                    name: 'HDFS'
+                }, {
+                    name: 'Spark Streaming'
+                }, {
+                    name: 'Flume'
+                }, {
+                    name: 'Kafka'
+                }],
+                logo: '/images/DCLogo.jpg',
+                altText: 'three.js',
+                roles: [
+                    '3D Animation Programmer',
+                    'Researcher and Developer'
+                ],
+                responsibilities: [
+                ],
+                achievements: [
+                    'Auto-written files written to HDFS using Flume',
+                    'Logical segregattion of input using Spark Streaming',
+                    'Population of messages on Kafka consumers on the basis of topics'
+                ]
+            }]
         }
     ]
 
@@ -178,7 +210,11 @@ export default class Experience extends Component {
                     <div className="experience-details">
                         {
                             this.experienceDetails.find((experienceType) => experienceType.type === this.state.selectedType).experiences.map((experience) => {
-                                return <DetailHolder item={experience} isWorkExperience={true}></DetailHolder>
+                                return (
+                                    <FadeIn delay={100} transitionDuration={1000} >
+                                        <DetailHolder item={experience} isWorkExperience={true}></DetailHolder>
+                                    </FadeIn>
+                                )
                             })
                         }
                     </div>

@@ -89,22 +89,25 @@ export default class Certificates extends Component {
 
     render() {
         return (
-            <div className="middle">
-                <div className="middle">
-                    <h1>Licenses</h1>
+            <div className="certificates-middle">
+                <div className="certificates-vertical-container">
+                    <div className="certificates-middle">
+                        <h1>Licenses</h1>
+                    </div>
+                    <div className="certificates-container">
+                        {
+                            this.badges.map((badge) => {
+                                return (<Card badge={badge}></Card>)
+                            })
+                        }
+                    </div>
                 </div>
-                <div className="container">
-                    {
-                        this.badges.map((badge) => {
-                            return (<Card badge={badge}></Card>)
-                        })
-                    }
-                </div>
-                <div style={{marginTop: "50px"}}>
-                    <div className="middle">
+
+                <div className="certificates-vertical-container" style={{ marginTop: "50px" }}>
+                    <div className="certificates-middle">
                         <h1>Certificates</h1>
                     </div>
-                    <div className="container">
+                    <div className="certificates-container">
                         <Carousel images={this.images}></Carousel>
                     </div>
                 </div>

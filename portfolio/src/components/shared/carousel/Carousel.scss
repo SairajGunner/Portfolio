@@ -1,13 +1,15 @@
 @use '../../../App.scss' as app;
 
 .carousel-container {
+    width: 80vw;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-items: center;
     align-items: center;
     -ms-flex-align: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .carousel-phone-renderer {
@@ -15,26 +17,30 @@
 }
 
 .image-renderer-container {
-    width: 80vw;
-    height: 80vh;
+    max-width: 75%;
+    max-height: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-items: center;
     align-items: center;
     user-select: none;
 }
 
 .image-renderer {
-    max-width: 956px;
-    max-height: 537px;
+    // max-width: 956px;
+    // max-height: 537px;
+    max-width: 90%;
+    max-height: 90%;
     background-color: black;
 }
 
 .image-content {
     z-index: 2;
-    max-width: 956px;
-    max-height: 537px;
+    // max-width: 956px;
+    // max-height: 537px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .renderer-indicator {
