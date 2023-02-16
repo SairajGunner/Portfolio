@@ -232,7 +232,7 @@ export default class Experience extends Component {
     render() {
         return (
             <div className="experience-parent-container">
-                <div className="caption">
+                <div className="experience-caption">
                     HARD WORK IS NON-NEGOTIABLE
                 </div>
                 <div className="experience-type-selector">
