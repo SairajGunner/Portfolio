@@ -14,6 +14,12 @@ export default class Education extends Component {
             favorites: [{
                 name: 'Data Analysis Tools',
                 skills: ['Hadoop', 'Spark', 'Scala']
+            },{
+                name: 'Visualization and Leadership',
+                skills: ['Tableau', 'Power BI']
+            },{
+                name: 'Predictive Modeling',
+                skills: ['Python', 'R']
             }],
             grade: '4.64 CGPA on a scale of 5',
             logo: '/images/DCLogo.jpg',

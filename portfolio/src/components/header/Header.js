@@ -22,7 +22,7 @@ export default class Header extends Component {
         else
             this.setState({
                 showTray: false
-            })
+            });
     }
 
     render() {
