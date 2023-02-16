@@ -95,6 +95,37 @@ export default class Experience extends Component {
         }, {
             type: 'Projects',
             experiences: [{
+                name: 'Web Developer',
+                institution: 'Self',
+                location: '',
+                duration: 'Dec 2022 - Feb 2023',
+                load: 'Casual',
+                favorites: [{
+                    name: 'React'
+                }, {
+                    name: 'JavaScript'
+                }, {
+                    name: 'Azure Hosting'
+                }, {
+                    name: 'DNS & Networking'
+                }],
+                logo: '/images/Self.jpg',
+                altText: 'self.js',
+                roles: [
+                    'Front-end Developer',
+                    'UI / UX Designer'
+                ],
+                responsibilities: [
+                ],
+                achievements: [
+                ],
+                links: [
+                    {
+                        href: 'https://github.com/SairajGunner/Portfolio',
+                        label: 'GitHub'
+                    }
+                ]
+            }, {
                 name: '3D WebGL Developer',
                 institution: 'three.js Journey - Bruno Simon',
                 location: '',
@@ -119,6 +150,12 @@ export default class Experience extends Component {
                 ],
                 achievements: [
                     'Incorporated networking for multiplayer gaming in virtual reality'
+                ],
+                links: [
+                    {
+                        href: 'www.google.com',
+                        label: 'Google'
+                    }
                 ]
             }]
         }, {
@@ -127,7 +164,7 @@ export default class Experience extends Component {
                 name: 'Data Analytics Student',
                 institution: 'Durham College',
                 location: 'Oshawa, ON, Canada',
-                duration: 'September 2022 - December 2022',
+                duration: 'Sep 2022 - Dec 2022',
                 load: 'Casual',
                 favorites: [{
                     name: 'HDFS'
@@ -139,10 +176,10 @@ export default class Experience extends Component {
                     name: 'Kafka'
                 }],
                 logo: '/images/DCLogo.jpg',
-                altText: 'three.js',
+                altText: 'Durham College',
                 roles: [
-                    '3D Animation Programmer',
-                    'Researcher and Developer'
+                    'ETL Engineer',
+                    'Big Data Engineer'
                 ],
                 responsibilities: [
                 ],

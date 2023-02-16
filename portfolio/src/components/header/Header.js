@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.scss';
 
 function Header() {
@@ -6,26 +6,30 @@ function Header() {
         <div>
             <div className="flex-container">
                 <div className="logo menu-btn">
-                    <Link to={"/welcome"}><img width={"120px"} src="/images/Sairaj - Resize.png" alt="Sairaj - Logo"></img></Link>
+                    <NavLink to={"/welcome"}><img width={"120px"} src="/images/Sairaj - Resize.png" alt="Sairaj - Logo"></img></NavLink>
                 </div>
                 <div className="flex-container-buttons">
                     <div className="menu-btn">
-                        <Link to={"/"}>Home</Link>
+                        <NavLink to={"/"} className={(isActive) => {
+                            console.log('Home ', isActive);
+                            return isActive ? "menu-btn-selected" : ""
+                        }
+                        }>Home</NavLink>
                     </div>
                     <div className="menu-btn">
-                        <Link to={"/experience"}>Experience</Link>
+                        <NavLink to={"/experience"}>Experience</NavLink>
                     </div>
                     <div className="menu-btn">
-                        <Link to={"/licenses"}>Licenses</Link>
+                        <NavLink to={"/licenses"}>Licenses</NavLink>
                     </div>
                     <div className="menu-btn">
-                        <Link to={"/skills"}>Skills</Link>
+                        <NavLink to={"/skills"}>Skills</NavLink>
                     </div>
                     <div className="menu-btn">
-                        <Link to={"/education"}>Education</Link>
+                        <NavLink to={"/education"}>Education</NavLink>
                     </div>
                     <div className="menu-btn">
-                        <Link to={"/contact"}>Contact</Link>
+                        <NavLink to={"/contact"}>Contact</NavLink>
                     </div>
                 </div>
             </div>

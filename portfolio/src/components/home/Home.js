@@ -15,13 +15,13 @@ function Home() {
                     <br></br>
                     <span onMouseOver={ChangeColor}>STACK</span>
                     <br></br>
-                    <span onMouseOver={ChangeColor}>WEB</span>
+                    <span onMouseOver={ChangeColor}>SOFTWARE</span>
                     <br></br>
                     <span onMouseOver={ChangeColor}>DEVELOPER</span>
                 </p>
             </div>
             <div className="intro-small">
-                <p onClick={ChangeColor} className="gigantic-font">FULL STACK WEB DEVELOPER</p>
+                <p onClick={ChangeColor} className="gigantic-font">FULL STACK SOFTWARE DEVELOPER</p>
             </div>
             <div className="brief-description">
                 <section>

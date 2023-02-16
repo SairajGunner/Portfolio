@@ -89,6 +89,19 @@ export default class DetailHolder extends Component {
                                     </ul>
                                 </p>
                             }
+                            {
+                                this.props.item.links && this.props.item.links.length > 0 &&
+                                <p>
+                                    Links:
+                                    <ul>
+                                        {
+                                            this.props.item.links.map((link) => {
+                                                return <li><a href={link.href} target="_blank" rel="noreferrer">{link.label}</a></li>
+                                            })
+                                        }
+                                    </ul>
+                                </p>
+                            }
                         </div>
                     </div>
                 }

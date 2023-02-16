@@ -32,6 +32,11 @@
     cursor: pointer;
 }
 
+.menu-btn-selected {
+    cursor: pointer;
+    text-shadow: 1px 1px 10px white;
+}
+
 .menu-btn:hover {
     text-shadow: 1px 1px 10px white;
 }
