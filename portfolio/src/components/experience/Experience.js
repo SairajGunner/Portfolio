@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 import DetailHolder from '../shared/detail-holder/DetailHolder';
 import './Experience.scss';
 
@@ -94,6 +95,37 @@ export default class Experience extends Component {
         }, {
             type: 'Projects',
             experiences: [{
+                name: 'Web Developer',
+                institution: 'Self',
+                location: '',
+                duration: 'Dec 2022 - Feb 2023',
+                load: 'Casual',
+                favorites: [{
+                    name: 'React'
+                }, {
+                    name: 'JavaScript'
+                }, {
+                    name: 'Azure Hosting'
+                }, {
+                    name: 'DNS & Networking'
+                }],
+                logo: '/images/Self.jpg',
+                altText: 'self.js',
+                roles: [
+                    'Front-end Developer',
+                    'UI / UX Designer'
+                ],
+                responsibilities: [
+                ],
+                achievements: [
+                ],
+                links: [
+                    {
+                        href: 'https://github.com/SairajGunner/Portfolio',
+                        label: 'GitHub'
+                    }
+                ]
+            }, {
                 name: '3D WebGL Developer',
                 institution: 'three.js Journey - Bruno Simon',
                 location: '',
@@ -118,6 +150,43 @@ export default class Experience extends Component {
                 ],
                 achievements: [
                     'Incorporated networking for multiplayer gaming in virtual reality'
+                ],
+                links: [
+                    {
+                        href: 'www.google.com',
+                        label: 'Google'
+                    }
+                ]
+            }]
+        }, {
+            type: 'Study',
+            experiences: [{
+                name: 'Data Analytics Student',
+                institution: 'Durham College',
+                location: 'Oshawa, ON, Canada',
+                duration: 'Sep 2022 - Dec 2022',
+                load: 'Casual',
+                favorites: [{
+                    name: 'HDFS'
+                }, {
+                    name: 'Spark Streaming'
+                }, {
+                    name: 'Flume'
+                }, {
+                    name: 'Kafka'
+                }],
+                logo: '/images/DCLogo.jpg',
+                altText: 'Durham College',
+                roles: [
+                    'ETL Engineer',
+                    'Big Data Engineer'
+                ],
+                responsibilities: [
+                ],
+                achievements: [
+                    'Auto-written files written to HDFS using Flume',
+                    'Logical segregattion of input using Spark Streaming',
+                    'Population of messages on Kafka consumers on the basis of topics'
                 ]
             }]
         }
@@ -163,7 +232,7 @@ export default class Experience extends Component {
     render() {
         return (
             <div className="experience-parent-container">
-                <div className="caption">
+                <div className="experience-caption">
                     HARD WORK IS NON-NEGOTIABLE
                 </div>
                 <div className="experience-type-selector">
@@ -178,7 +247,11 @@ export default class Experience extends Component {
                     <div className="experience-details">
                         {
                             this.experienceDetails.find((experienceType) => experienceType.type === this.state.selectedType).experiences.map((experience) => {
-                                return <DetailHolder item={experience} isWorkExperience={true}></DetailHolder>
+                                return (
+                                    <FadeIn delay={100} transitionDuration={1000} >
+                                        <DetailHolder item={experience} isWorkExperience={true}></DetailHolder>
+                                    </FadeIn>
+                                )
                             })
                         }
                     </div>

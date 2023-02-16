@@ -1,7 +1,17 @@
+@use '../../App.scss' as app;
+
 .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.big-screen-menu {
+    display: flex;
+}
+
+.small-screen-menu {
+    display: none;
 }
 
 .flex-container > div {
@@ -9,7 +19,16 @@
     font-size: 20px;
 }
 
+.small-screen-menu-header > div {
+    margin: 10px;
+    font-size: 20px;
+}
+
 .flex-container > div:last-child {
+    margin-left: auto;
+}
+
+.small-screen-menu-header > div:last-child {
     margin-left: auto;
 }
 
@@ -28,8 +47,29 @@
     padding-right: 10px;
 }
 
+.small-screen-menu-header > div {
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .menu-btn {
     cursor: pointer;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    display: none;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.menu-btn-selected {
+    cursor: pointer;
+    text-shadow: 1px 1px 10px white;
+    text-decoration: underline;
 }
 
 .menu-btn:hover {
@@ -44,4 +84,46 @@ a {
     color: white;
     cursor: pointer;
     text-decoration: none;
+}
+
+.overlay-menu-tray {
+    z-index: 5;
+    width: 70vw;
+    min-height: 100vh;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 25px;
+    position: absolute;
+    background-color: app.$background-color;
+    border-right: 2px solid white;
+}
+
+.menu-items {
+    margin: 20px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 876px) {
+    .hamburger-menu {
+        cursor: pointer;
+        display: flex;
+        margin: 10px;
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .big-screen-menu {
+        display: none;
+    }
+
+    .small-screen-menu-header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-btn {
+        line-height: 50px;
+    }
 }

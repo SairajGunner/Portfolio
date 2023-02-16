@@ -55,7 +55,7 @@ export default class Education extends Component {
     render() {
         return (
             <div className="education-container">
-                <div className="caption">
+                <div className="education-caption">
                     KNOWLEDGE IS WEALTH
                 </div>
                 <div className="credential-section">
