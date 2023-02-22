@@ -12,9 +12,8 @@ export default class CustomTooltip extends Component {
             <div className="custom-tooltip">
                 <h3 className="custom-tooltip-title">{this.props.title}</h3>
                 <hr></hr>
-                <p className="custom-tooltip-description">
-                    {this.props.description}
-                </p>
+                <div className="custom-tooltip-description" dangerouslySetInnerHTML={{ __html: this.props.description }}>
+                </div>
             </div>
         );
     }
