@@ -29,3 +29,7 @@ $font-color: white;
   color: $font-color;
   min-height: 100vh;
 }
+
+html {
+  overflow-y: scroll;
+}

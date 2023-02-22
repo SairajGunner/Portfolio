@@ -26,4 +26,17 @@
 .custom-tooltip-description {
     font-family: serif;
     font-weight: lighter;
+    font-size: small;
+    justify-content: left;
+    text-align: left;
+}
+
+.custom-tooltip-description ul {
+    list-style-type: square;
+    margin: 25px;
+    padding: 0;
+}
+
+.custom-tooltip, .custom-tooltip-title, .custom-tooltip-description, .custom-tooltip-description :hover {
+    color: whitesmoke;
 }
