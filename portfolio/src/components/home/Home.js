@@ -37,7 +37,6 @@ function Home() {
                     <br></br>
                     <p className="intro-second">You can view more information about me on this website.</p>
                     <br></br>
-                    <p>Tip: Move the mouse over the text to feel the magic</p>
                 </section>
             </div>
         </div>

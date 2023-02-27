@@ -152,10 +152,6 @@ export default class Experience extends Component {
                     'Incorporated networking for multiplayer gaming in virtual reality'
                 ],
                 links: [
-                    {
-                        href: 'www.google.com',
-                        label: 'Google'
-                    }
                 ]
             }]
         }, {
