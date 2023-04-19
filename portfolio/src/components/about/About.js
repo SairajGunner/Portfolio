@@ -9,7 +9,7 @@ export default class About extends Component {
                     <div className="about-caption">
                         THIS IS MY PERSONAL ROADMAP
                     </div>
-                    <img src='/images/About.png' alt='Personal Roadmap'></img>
+                    <img src='/images/About.PNG' alt='Personal Roadmap'></img>
                 </div>
             </div>
         );
