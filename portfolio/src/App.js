@@ -8,7 +8,6 @@ import Certificates from './components/certificates/Certificates';
 import Contact from './components/contact/Contact';
 import Education from './components/education/Education';
 import Experience from './components/experience/Experience';
-import About from './components/about/About';
 
 function App() {
   return (
