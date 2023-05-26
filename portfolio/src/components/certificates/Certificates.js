@@ -6,15 +6,15 @@ import './Certificates.scss';
 export default class Certificates extends Component {
     images = [
         {
-            src: '/images/Azure Architect.jpg',
+            src: '/images/Azure Solutions Architect Certificate Renewal.PNG',
             alt: 'Azure Architect',
             title: 'Microsoft - Azure Architect'
         }, {
-            src: '/images/Azure Admin.jpg',
+            src: '/images/Azure Administrator Certificate Renewal.PNG',
             alt: 'Azure Administrator',
             title: 'Microsoft - Azure Administrator'
         }, {
-            src: '/images/Azure Network Engineer.jpg',
+            src: '/images/Microsoft Certified Azure Network Engineer Renewed.PNG',
             alt: 'Azure Network Engineer',
             title: 'Microsoft - Azure Network Engineer'
         }, {
@@ -63,11 +63,11 @@ export default class Certificates extends Component {
     badges = [{
         src: '/images/Azure Architect Badge.png',
         alt: 'Azure Architect Badge',
-        validity: 'May 2023'
+        validity: 'May 2024'
     }, {
         src: '/images/Azure Admin Badge.png',
         alt: 'Azure Administrator Badge',
-        validity: 'May 2023'
+        validity: 'May 2024'
     }, {
         src: '/images/Azure Network Engineer Badge.png',
         alt: 'Azure Network Engineer Badge',
