@@ -25,7 +25,6 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/licenses" element={<Certificates />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
         </Routes>
       </main>
     </div>

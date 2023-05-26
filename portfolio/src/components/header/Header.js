@@ -59,11 +59,6 @@ export default class Header extends Component {
                             }}>Education</NavLink>
                         </div>
                         <div className="menu-btn">
-                            <NavLink to={"/about"} className={(isActive) => {
-                                return isActive.isActive ? "menu-btn-selected" : ""
-                            }}>About</NavLink>
-                        </div>
-                        <div className="menu-btn">
                             <NavLink to={"/contact"} className={(isActive) => {
                                 return isActive.isActive ? "menu-btn-selected" : ""
                             }}>Contact</NavLink>
