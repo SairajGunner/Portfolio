@@ -152,6 +152,14 @@ export default class Experience extends Component {
                     'Incorporated networking for multiplayer gaming in virtual reality'
                 ],
                 links: [
+                    {
+                        href: 'https://github.com/SairajGunner/webgl-animation',
+                        label: 'GitHub'
+                    },
+                    {
+                        href: 'https://sairaj.psymj.com/threejs',
+                        label: 'Work'
+                    }
                 ]
             }]
         }, {
