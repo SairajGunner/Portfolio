@@ -1,0 +1,24 @@
+.threejs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.threejs-caption {
+    margin: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.threejs-list-container ul {
+    font-size: 30px;
+}
+
+.threejs-work-list a {
+    color: orange;
+}
+
+.threejs-list-container {
+    margin-top: 40px;
+}

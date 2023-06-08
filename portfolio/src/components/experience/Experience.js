@@ -155,6 +155,10 @@ export default class Experience extends Component {
                     {
                         href: 'https://github.com/SairajGunner/webgl-animation',
                         label: 'GitHub'
+                    },
+                    {
+                        href: 'https://sairaj.psymj.com/threejs',
+                        label: 'Work'
                     }
                 ]
             }]

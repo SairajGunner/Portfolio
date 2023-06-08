@@ -8,6 +8,10 @@ import Certificates from './components/certificates/Certificates';
 import Contact from './components/contact/Contact';
 import Education from './components/education/Education';
 import Experience from './components/experience/Experience';
+import ThreeJS from './components/threeJS/threeJS';
+import HauntedHouse from './components/threeJS/haunted-house/HauntedHouse';
+import ThreeJSPhysics from './components/threeJS/physics/ThreeJSPhysics';
+import ThreeJS3DText from './components/threeJS/3d-text/ThreeJS3DText';
 
 function App() {
   return (
@@ -24,6 +28,10 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/licenses" element={<Certificates />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/threejs" element={<ThreeJS />} />
+          <Route path="threejs/haunted-house" element={<HauntedHouse />} />
+          <Route path="threejs/physics" element={<ThreeJSPhysics />} />
+          <Route path="threejs/3d-text" element={<ThreeJS3DText />} />
         </Routes>
       </main>
     </div>
