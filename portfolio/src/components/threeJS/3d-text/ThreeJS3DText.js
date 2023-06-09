@@ -1,5 +1,4 @@
 import * as THREE from 'three';
-import * as dat from 'dat.gui';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { Mesh } from 'three';
 import React from 'react';
@@ -33,9 +32,6 @@ export default function ThreeJS3DText() {
         window.addEventListener('dblclick', () => {
             document.fullscreenElement ? document.exitFullscreen() : document.querySelector('.webgl').requestFullscreen();
         });
-
-        // Debug UI
-        const gui = new dat.GUI();
 
         // Asset Loaders
         const loadingManager = new THREE.LoadingManager();
