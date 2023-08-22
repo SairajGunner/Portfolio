@@ -10,6 +10,9 @@ export default class Skills extends Component {
                 name: 'Azure',
                 description: `<ul><li>Expertise in Azure architecture and solution design</li> <li>Implemented various PaaS and IaaS solutions</li> <li>Carried out the migration of several applications to the cloud</li></ul>`
             }, {
+                name: 'Node JS',
+                description: ``
+            }, {
                 name: '.NET',
                 description: `<ul><li>Multiple years of experience in .NET Core</li> <li>Microsoft certified C# developer</li> <li>Implemented complex, reusable functionalities in .NET</li></ul>`
             }, { 
