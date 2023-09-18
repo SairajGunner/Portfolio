@@ -130,8 +130,8 @@ export default class Experience extends Component {
               name: "MongoDB"
             }
           ],
-          logo: "/images/Self.jpg",
-          altText: "self.js",
+          logo: "/images/diamond.ico",
+          altText: "Goal Tracker Logo",
           roles: [
             "Full-stack Developer",
             "Solution Architect",
