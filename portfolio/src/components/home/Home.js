@@ -11,16 +11,12 @@ function Home() {
     <div className="container">
       <div className="intro-big">
         <div className="gigantic-font">
-          <div onMouseOver={ChangeColor}>
-            <span>DATA</span>
-            <br></br>
-            <span>ANALYST</span>
+          <div onMouseOver={ChangeColor} style={{ textAlign: "center" }}>
+            <span>DATA ANALYST</span>
           </div>
           <hr style={{ marginTop: "30px", marginBottom: "30px" }}></hr>
           <div onMouseOver={ChangeColor}>
-            <span>AI / ML</span>
-            <br></br>
-            <span>DEVELOPER</span>
+            <span>AI/ML DEVELOPER</span>
           </div>
         </div>
       </div>
