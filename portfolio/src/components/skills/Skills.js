@@ -5,21 +5,18 @@ import './Skills.scss';
 export default class Skills extends Component {
     skills = [
         {
-            name: 'Web Development',
-            subSkills: [{
-                name: 'Azure',
-                description: `<ul><li>Expertise in Azure architecture and solution design</li> <li>Implemented various PaaS and IaaS solutions</li> <li>Carried out the migration of several applications to the cloud</li></ul>`
-            }, {
-                name: '.NET',
-                description: `<ul><li>Multiple years of experience in .NET Core</li> <li>Microsoft certified C# developer</li> <li>Implemented complex, reusable functionalities in .NET</li></ul>`
-            }, { 
-                name: 'Angular',
+            name: 'AI / ML',
+            subSkills: [{ 
+                name: 'SkLearn', 
                 description: '' 
             }, { 
-                name: 'React', 
+                name: 'TensorFlow', 
                 description: '' 
             }, { 
-                name: 'SQL Server', 
+                name: 'Keras', 
+                description: '' 
+            }, { 
+                name: 'PyTorch', 
                 description: '' 
             }]
         }, {
@@ -42,23 +39,47 @@ export default class Skills extends Component {
             }, { 
                 name: 'Kafka', 
                 description: '' 
-            }]
-        }, {
-            name: '3D & Game Development',
-            subSkills: [{ 
-                name: 'three.js', 
+            }, { 
+                name: 'Tableau', 
                 description: '' 
             }, { 
-                name: 'Unity', 
+                name: 'Power BI', 
+                description: '' 
+            }]
+        }, {
+            name: 'Web Development',
+            subSkills: [{
+                name: 'Azure',
+                description: `<ul><li>Expertise in Azure architecture and solution design</li> <li>Implemented various PaaS and IaaS solutions</li> <li>Carried out the migration of several applications to the cloud</li></ul>`
+            }, {
+                name: '.NET',
+                description: `<ul><li>Multiple years of experience in .NET Core</li> <li>Microsoft certified C# developer</li> <li>Implemented complex, reusable functionalities in .NET</li></ul>`
+            }, {
+                name: 'Node JS',
+                description: ''
+            }, { 
+                name: 'Angular',
+                description: '' 
+            }, { 
+                name: 'React', 
+                description: '' 
+            }, { 
+                name: 'SQL', 
+                description: '' 
+            }, { 
+                name: 'MongoDB', 
                 description: '' 
             }]
         }, {
             name: 'Research',
             subSkills: [{ 
-                name: 'Game Analytics',
+                name: 'Generative AI',
                 description: '' 
             }, { 
-                name: 'Virtual Reality',
+                name: 'On-Device AI',
+                description: '' 
+            }, { 
+                name: 'Spiking Neural Networks',
                 description: '' 
             }]
         }
