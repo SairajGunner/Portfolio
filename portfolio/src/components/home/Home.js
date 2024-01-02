@@ -11,14 +11,21 @@ function Home() {
         <div className="container">
             <div className="intro-big">
                 <p className="gigantic-font">
-                    <span onMouseOver={ChangeColor}>DATA</span>
-                    <br></br>
-                    <span onMouseOver={ChangeColor}>ANALYST</span>
-                    <br></br>
-                    <br></br>
-                    <span onMouseOver={ChangeColor}>AI / ML</span>
-                    <br></br>
-                    <span onMouseOver={ChangeColor}>DEVELOPER</span>
+                    <div onMouseOver={ChangeColor}>
+                        <span>DATA</span>
+                        <br></br>
+                        <span>ANALYST</span>
+                    </div>
+                    <hr style="
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                    ">
+                    </hr>
+                    <div onMouseOver={ChangeColor}>
+                        <span>AI / ML</span>
+                        <br></br>
+                        <span>DEVELOPER</span>
+                    </div>
                 </p>
             </div>
             <div className="intro-small">
@@ -30,9 +37,9 @@ function Home() {
                     <br></br>
                     <p className="intro-second">Below are some key facts about me. I am</p>
                     <ul className="intro-second">
-                        <li>a seasoned <b><i>web developer</i></b> with profound experience</li>
+                        <li>a seasoned <b><i>data analyst</i></b> with profound experience</li>
                         <li>a <b><i>cloud-specialist</i></b> with multiple certificates in Azure</li>
-                        <li>an up-and-coming <b><i>data analyst</i></b></li>
+                        <li>an up-and-coming <b><i>AI expert</i></b></li>
                         <li> a human being :)</li>
                     </ul>
                     <br></br>
