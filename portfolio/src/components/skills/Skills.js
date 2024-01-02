@@ -8,7 +8,7 @@ export default class Skills extends Component {
             name: 'AI / ML',
             subSkills: [{ 
                 name: 'SkLearn', 
-                description: '' 
+                description: ''
             }, { 
                 name: 'TensorFlow', 
                 description: '' 
