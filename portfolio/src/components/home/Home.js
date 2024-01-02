@@ -11,17 +11,18 @@ function Home() {
         <div className="container">
             <div className="intro-big">
                 <p className="gigantic-font">
-                    <span onMouseOver={ChangeColor}>FULL</span>
+                    <span onMouseOver={ChangeColor}>DATA</span>
                     <br></br>
-                    <span onMouseOver={ChangeColor}>STACK</span>
+                    <span onMouseOver={ChangeColor}>ANALYST</span>
                     <br></br>
-                    <span onMouseOver={ChangeColor}>SOFTWARE</span>
+                    <br></br>
+                    <span onMouseOver={ChangeColor}>AI / ML</span>
                     <br></br>
                     <span onMouseOver={ChangeColor}>DEVELOPER</span>
                 </p>
             </div>
             <div className="intro-small">
-                <p onClick={ChangeColor} className="gigantic-font">FULL STACK SOFTWARE DEVELOPER</p>
+                <p onClick={ChangeColor} className="gigantic-font">DATA ANALYST / AI ML DEVELOPER</p>
             </div>
             <div className="brief-description">
                 <section>
