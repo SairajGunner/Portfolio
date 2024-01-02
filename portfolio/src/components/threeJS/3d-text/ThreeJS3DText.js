@@ -55,7 +55,7 @@ export default function ThreeJS3DText() {
         const fontLoader = new THREE.FontLoader(loadingManager);
         fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
             const textGeometry = new THREE.TextBufferGeometry(
-                'All the best, Isha!', {
+                'All the best, Isha!\nYou are\nAWESOME!', {
                 font: font,
                 size: 0.5,
                 height: 0.2,
