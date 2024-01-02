@@ -20,6 +20,7 @@ function Home() {
                         margin-top: 30px;
                         margin-bottom: 30px;
                     ">
+                    </hr>
                     <div onMouseOver={ChangeColor}>
                         <span>AI / ML</span>
                         <br></br>
