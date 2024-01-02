@@ -27,6 +27,39 @@ export default class Experience extends Component {
       type: "Work",
       experiences: [
         {
+          name: "Developer - Game Data Analyst",
+          institution: "Gata Games Inc.",
+          location: "Toronto, ON, Canada",
+          duration: "Oct 2023 - Present",
+          load: "Part-Time (Contract)",
+          favorites: [
+            {
+              name: "Game Data Analytics"
+            },
+            {
+              name: "Google Analytics"
+            },
+            {
+              name: "Data Visualization"
+            },
+            {
+              name: "Communication"
+            }
+          ],
+          logo: "/images/GataLogo.jpg",
+          altText: "Gata Games Inc.",
+          roles: [
+            "Software Programmer",
+            "Game Data Analyst"
+          ],
+          responsibilities: [
+            "Incorporating analytics into a game to analyze player interaction",
+            "Integrating Google Analytics into Unity game engine",
+            "Researching various technical implementation options",
+            "Creating data visualizations"
+          ],
+          achievements: []
+        }, {
           name: "Research Assistant",
           institution: "Durham College",
           location: "Oshawa, ON, Canada",
@@ -64,44 +97,51 @@ export default class Experience extends Component {
           ]
         },
         {
-          name: "Associate Consultant, Senior Software Engineer",
+          name: "Associate Consultant - Data Analyst",
           institution: "Capgemini",
           location: "Navi Mumbai, MH, India",
           duration: "Oct 2017 - Aug 2022",
           load: "Full-Time",
           favorites: [
             {
+              name: "Data Analysis"
+            },
+            {
+              name: "Machine Learning"
+            },
+            {
+              name: "Data Visualization"
+            },
+            {
+              name: "Presentation"
+            },
+            {
               name: "Cloud Computing"
             },
             {
-              name: "Web Development"
-            },
-            {
               name: "Software Programming"
-            },
-            {
-              name: "Solution Designing"
             }
           ],
           logo: "/images/CGLogo.jpg",
           altText: "Capgemini",
           roles: [
-            "Software Engineer",
-            "Full-stack Web Developer",
+            "Data Analyst",
             "Cloud Infrastructure Engineer",
-            "Cloud Migration Lead"
+            "Full-stack Web Developer",
+            "Tech Team Leader"
           ],
           responsibilities: [
-            "Understanding user requirements and designing technical solutions",
-            "Writing, reviewing and unit-testing code for new product development",
-            "Conducting impact-analysis of code change to other parts and connected systems",
+            "Solving various problems and improving processes using data analysis and machine learning",
+            "Visualizing the findings using advanced visualization software",
+            "Presenting visualizations to key stakeholders to help them make business decisions",
             "Technically leading projects based on migrating web applications to the cloud",
             "Coordinating with various technical teams, business teams and other stakeholders",
             "Documenting work done and changes made to new and in-use applications"
           ],
           achievements: [
+            "Reduced data procurement time for data related projects by 20%",
+            "Increased client's sales by at least 10% by identifying ideal advertisement positioning using data analytics",
             "Led the migration of 100+ on-premises applications to Azure PaaS and IaaS",
-            "Delivered complex functionalities, end-to-end, in web applications",
             "Awarded with the highest performance rating band for 3 out of 4 complete years with Capgemini",
             "Awarded with stock options on the basis of performance",
             "Awarded short- and long-term retention bonus",
