@@ -18,7 +18,7 @@ export default class ThreeJS extends Component {
                     <ul className="threejs-work-list">
                         <li><a href={window.location.href + "/haunted-house"} target="_blank" rel="noreferrer">Haunted House</a></li>
                         <li><a href={window.location.href + "/physics"} target="_blank" rel="noreferrer">Physics</a></li>
-                        {/* <li><a href={window.location.href + "/3d-text"} target="_blank">3D Text</a></li> */}
+                        <li><a href={window.location.href + "/3d-text"} target="_blank" rel="noreferrer">3D Text</a></li>
                     </ul>
                 </div>
             </div>

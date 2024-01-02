@@ -22,7 +22,11 @@ function Home() {
       </div>
       <div className="intro-small">
         <p onClick={ChangeColor} className="gigantic-font">
-          DATA ANALYST / AI ML DEVELOPER
+          DATA ANALYST
+        </p>
+        <hr></hr>
+        <p onClick={ChangeColor} className="gigantic-font">
+          AI ML DEVELOPER
         </p>
       </div>
       <div className="brief-description">

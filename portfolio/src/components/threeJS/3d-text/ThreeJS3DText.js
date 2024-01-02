@@ -50,12 +50,12 @@ export default function ThreeJS3DText() {
         }
 
         const textureLoader = new THREE.TextureLoader(loadingManager);
-        const matcapTexture = textureLoader.load('/textures/matcaps/7.png');
+        const matcapTexture = textureLoader.load('/textures/matcaps/8.png');
 
         const fontLoader = new THREE.FontLoader(loadingManager);
         fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
             const textGeometry = new THREE.TextBufferGeometry(
-                'Hello Three.js', {
+                'All the best, Isha!', {
                 font: font,
                 size: 0.5,
                 height: 0.2,
@@ -114,7 +114,7 @@ export default function ThreeJS3DText() {
 
         // Create Camera
         const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100);
-        camera.position.z = 3;
+        camera.position.z = 4;
         scene.add(camera);
 
         // Set Controls
