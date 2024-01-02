@@ -48,10 +48,7 @@ export default class Experience extends Component {
           ],
           logo: "/images/GataLogo.jpg",
           altText: "Gata Games Inc.",
-          roles: [
-            "Software Programmer",
-            "Game Data Analyst"
-          ],
+          roles: ["Software Programmer", "Game Data Analyst"],
           responsibilities: [
             "Incorporating analytics into a game to analyze player interaction",
             "Integrating Google Analytics into Unity game engine",
@@ -59,7 +56,8 @@ export default class Experience extends Component {
             "Creating data visualizations"
           ],
           achievements: []
-        }, {
+        },
+        {
           name: "Research Assistant",
           institution: "Durham College",
           location: "Oshawa, ON, Canada",
@@ -251,7 +249,7 @@ export default class Experience extends Component {
               label: "GitHub"
             },
             {
-              href: "https://sairaj.psymj.com/threejs",
+              href: "https://sairaj.thetechdoctor.ca/threejs",
               label: "Work"
             }
           ]
