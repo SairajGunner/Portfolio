@@ -55,7 +55,7 @@ export default function ThreeJS3DText() {
         const fontLoader = new THREE.FontLoader(loadingManager);
         fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
             const textGeometry = new THREE.TextBufferGeometry(
-                'Isha !!!\nWish you\nAll the best\nYou are\nAWESOME !!!', {
+                'Hey Isha !!!\nWish you\nAll the best\nYou are\nAWESOME !!!', {
                 font: font,
                 size: 0.5,
                 height: 0.2,
@@ -114,7 +114,7 @@ export default function ThreeJS3DText() {
 
         // Create Camera
         const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100);
-        camera.position.z = 10;
+        camera.position.z = 50;
         scene.add(camera);
 
         // Set Controls
